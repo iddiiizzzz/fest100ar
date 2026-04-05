@@ -1,0 +1,119 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    background: black;
+    color: rgb(255, 234, 0);
+    font-family: Times, serif;
+}
+
+.star-wars {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: black;
+}
+
+
+
+
+.start-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: rgb(255, 234, 0);
+    color: black;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.start-button:hover {
+    background-color: rgb(225, 206, 2);
+}
+
+.end-screen {
+    position: absolute;
+    inset: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    color: rgb(255, 234, 0);
+    text-align: center;
+    z-index: 20;
+}
+
+.replay-button {
+    font-size: 24px;
+    padding: 15px 30px;
+    background: rgb(255, 234, 0);
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.replay-button:hover {
+    background-color: rgb(225, 206, 2);
+}
+
+.end-gif {
+    width: min(300px, 60vw);
+    margin-bottom: 20px;
+}
+
+
+
+
+video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    z-index: 5;
+}
+
+
+.mobile-video {
+    pointer-events: none;
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+    opacity: 0 !important;
+}
+video::-webkit-media-controls {
+    display: none !important;
+    opacity: 0 !important;
+}
+
+video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+video::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+video::-webkit-media-controls-play-button {
+    display: none !important;
+}
+
+video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+}
+
+
