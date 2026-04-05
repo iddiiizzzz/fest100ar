@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 Års Fest</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>  
+
+<audio id="crawlMusic" src="StarWarsIntro.mp3"></audio>
+
+ 
+<body> 
+ 
+
+  
+
+    <button class="start-button" onclick="startCrawl()">▶</button>
+    
+    <video src="starwars_computer_version3.mp4"></video>
+    <!-- <video class="mobile-video" src="starwars_mobile_version.mp4"></video> -->
+    <!-- <video class="mobile-video" src="starwars_mobile_version.mp4" playsinline webkit-playsinline muted></video> -->
+    <video 
+        class="mobile-video"
+        src="starwars_mobile_version2.mp4"
+        playsinline
+        webkit-playsinline
+        muted
+    ></video>
+
+
+
+    
+
+    <div class="end-screen" id="endScreen">
+        <img src="party_i_will.gif" class="end-gif">
+        <!-- <button class="replay-button" onclick="replayCrawl()">▶ Replay</button> -->
+        
+    </div>
+
+    <script src="functions.js"></script>
+</body>
+
+</html>
